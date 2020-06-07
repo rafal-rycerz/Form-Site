@@ -1,117 +1,124 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Site</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <header class="nav" id="top">
-      <nav class="navigation">
-        <a
-          class="navigation__links navigation__links--homepage"
-          href="index.html"
-          >Głowny formularz</a
-        >
-        <a class="navigation__links" href="zadnie.html">Formularz zadanie</a>
-      </nav>
-    </header>
+</head>
+
+<body>
     <main>
-      <h1>Forms Playground</h1>
-      <form method="POST" action="https://dev.cotenfrontend.pl" class="form">
-        <p>
-          <label for="firstName">Your Name:</label>
-          <input class="form__item" type="text" value="Michał" placeholder="Enter Your Name" id="firstName" name="firstName" />
-        </p>
-        <p>
-            <label for="lastName">Your Last Name:</label>
-            <input required class="form__item" type="text" placeholder="Enter Your Last Name" id="lastName" name="lastName" />          
-        </p>
-        <p>
-            <label for="phoneNumber">Your Phone Number:</label>
-            <input class="form__item" type="tel" placeholder="Enter Your Phone Number" id="phoneNumber" name="phoneNumber" />          
-        </p>
-        <p>
-            <label for="email">Your E-mail:</label>
-            <input required class="form__item" type="email" placeholder="Enter Your E-mail" id="email" name="email" />          
-        </p>
-        <p>
-            <label for="range">Range</label>
-            <input class="form__item" type="range" id="range" name="range" min=0 max="100" step="10" />          
-        </p>
-        <p>
-            <label for="password">Your Password:</label>
-            <input class="form__item" type="password" id="password" name="password" />          
-        </p>
+        <header class="nav" id="top">
+            <nav class="navigation">
+                <a class="navigation__links navigation__links--homepage" href="index.html">Głowny formularz</a>
+                <a class="navigation__links" href="zadnie.html">Formularz zadanie</a>
+            </nav>
+        </header>
 
-        <p>
-            <label for="band">Your Band:</label>
-            <select name="band" id="band">
-<option value="band-1">Metalica</option>
-<option value="band-2">AD/CD</option>
-<option value="band-3">Nirvana</option>
+        <h1>Forms Playground</h1>
+        <form method="POST" action="https://dev.cotenfrontend.pl" class="form">
+            <p>
+                <label for="firstName">Your Name:</label>
+                <input class="form__item" type="text" value="Michał" placeholder="Enter Your Name" id="firstName"
+                    name="firstName" />
+            </p>
+            <p>
+                <label for="lastName">Your Last Name:</label>
+                <input required class="form__item" type="text" placeholder="Enter Your Last Name" id="lastName"
+                    name="lastName" />
+            </p>
+            <p>
+                <label for="phoneNumber">Your Phone Number:</label>
+                <input class="form__item" type="tel" placeholder="Enter Your Phone Number" id="phoneNumber"
+                    name="phoneNumber" />
+            </p>
+            <p>
+                <label for="email">Your E-mail:</label>
+                <input required class="form__item" type="email" placeholder="Enter Your E-mail" id="email"
+                    name="email" />
+            </p>
+            <p>
+                <label for="range">Range</label>
+                <input class="form__item" type="range" id="range" name="range" min=0 max="100" step="10" />
+            </p>
+            <p>
+                <label for="password">Your Password:</label>
+                <input class="form__item" type="password" id="password" name="password" />
+            </p>
 
-            </select>       
-        </p>
+            <p>
+                <label for="band">Your Band:</label>
+                <select name="band" id="band">
+                    <option value="band-1">Metalica</option>
+                    <option value="band-2">AD/CD</option>
+                    <option value="band-3">Nirvana</option>
 
-<fieldset>
-<legend>Adress</legend>
-<p>
-    <label for="streetName">Street name:</label>
-    <input class="form__item" type="text" placeholder="Enter Your Streer Name" id="streetName" name="streetName" />
-</p>
-<p>
-    <label for="homeNo">Home no:</label>
-    <input class="form__item" type="text" placeholder="Enter Your Home no" id="homeNo" name="homeNo" />
-</p>
-<p>
-    <label for="flatNo">Flat no:</label>
-    <input class="form__item" type="number" placeholder="Enter Your Flat no" id="flatNo" name="flatNo" />
-</p>
-<p>
-    <label for="cityName"Name">City:</label>
-    <input class="form__item" type="text" placeholder="Enter Your City" id="cityName" name="cityName" />
-  </p>
-  <p>
-    <label for="zipCode">ZipCode:</label>
-    <input required class="form__item" type="text" pattern="[0-9]{2}-[0-9]{3}" placeholder="00-000" id="zipCode" name="zipCode" />
-  </p>
-</fieldset>
-<fieldset>  
-    <legend>Favorite Icecream flavour:</legend>
-    <p>
-        <label><input type="radio" name="icecream" value="chocolate"/>Chocolate</label>
-    </p>
-    <p>
-        <label><input type="radio" name="icecream" value="vanila" checked/>Vanila</label>
-    </p>
-    <p>
-        <label><input type="radio" name="icecream" value="strawberry" />Strawberry</label>
-    </p>
-</fieldset>
+                </select>
+            </p>
 
-<fieldset>
-    <legend>Agreements</legend>
-    <p>
-        <label><input type="checkbox" name="agreement1" value="agr1" />Agreement 1</label>
-    </p> 
-    <p>
-        <label><input type="checkbox" name="agreement2" value="agr2" checked/>Agreement 2</label>
-    </p>
-</fieldset> 
-<p>
-    <label for="comment">Your Comment:</label>
-    <textarea class="form__item" id="comment" name="comment">My Comment... </textarea>
-</p>
-<p>
-    <input type="submit" name="submit" value="Send"/>
-</p>
-      </form>
-   
-    <footer class="footer">
-      Strona Główna <a href="#top">Wróć na górę strony</a>
-    </footer>
-</main>
-  </body>
+            <fieldset>
+                <legend>Adress</legend>
+                <p>
+                    <label for="streetName">Street name:</label>
+                    <input class="form__item" type="text" placeholder="Enter Your Streer Name" id="streetName"
+                        name="streetName" />
+                </p>
+                <p>
+                    <label for="homeNo">Home no:</label>
+                    <input class="form__item" type="text" placeholder="Enter Your Home no" id="homeNo" name="homeNo" />
+                </p>
+                <p>
+                    <label for="flatNo">Flat no:</label>
+                    <input class="form__item" type="number" placeholder="Enter Your Flat no" id="flatNo"
+                        name="flatNo" />
+                </p>
+                <p>
+                    <label for="cityName" Name">City:</label>
+                    <input class="form__item" type="text" placeholder="Enter Your City" id="cityName" name="cityName" />
+                </p>
+                <p>
+                    <label for="zipCode">ZipCode:</label>
+                    <input required class="form__item" type="text" pattern="[0-9]{2}-[0-9]{3}" placeholder="00-000"
+                        id="zipCode" name="zipCode" />
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Favorite Icecream flavour:</legend>
+                <p>
+                    <label><input type="radio" name="icecream" value="chocolate" />Chocolate</label>
+                </p>
+                <p>
+                    <label><input type="radio" name="icecream" value="vanila" checked />Vanila</label>
+                </p>
+                <p>
+                    <label><input type="radio" name="icecream" value="strawberry" />Strawberry</label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Agreements</legend>
+                <p>
+                    <label><input type="checkbox" name="agreement1" value="agr1" />Agreement 1</label>
+                </p>
+                <p>
+                    <label><input type="checkbox" name="agreement2" value="agr2" checked />Agreement 2</label>
+                </p>
+            </fieldset>
+            <p>
+                <label for="comment">Your Comment:</label>
+                <textarea class="form__item" id="comment" name="comment">My Comment... </textarea>
+            </p>
+            <p>
+                <input type="submit" name="submit" value="Send" />
+            </p>
+        </form>
+
+        <footer class="footer">
+            Strona Główna <a href="#top">Wróć na górę strony</a>
+        </footer>
+    </main>
+</body>
+
 </html>

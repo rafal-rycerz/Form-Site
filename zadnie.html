@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Site</title>
 </head>
+
 <body>
-    <header class="nav" id="top">
-        <nav class="navigation">
-          <a class="navigation__links navigation__links--homepage"
-            href="index.html"
-            >Głowny formularz</a
-          >
-          <a class="navigation__links" href="zadnie.html">Formularz zadanie</a>
-        </nav>
-      </header>
-<main>
+    <main>
+        <header class="nav" id="top">
+            <nav class="navigation">
+                <a class="navigation__links navigation__links--homepage" href="index.html">Głowny formularz</a>
+                <a class="navigation__links" href="zadnie.html">Formularz zadanie</a>
+            </nav>
+        </header>
 
+        <form method="POST" action="https://dev.cotenfrontend.pl" class="form">
+            <p>
+                <label for="name">Your Name:</label>
+                <input class="form__item" type="text" name="name" id="name" />
+            </p>
+            <p>
+                <label for="riddle">Riddle:</label>
+                <input class="form__item" type="text" name="riddle" id="riddle" />
+            </p>
+            <p>
+                <input type="submit" />
+            </p>
+        </form>
 
+        <footer class="footer">
+            Strona Główna <a href="#top">Wróć na górę strony</a>
+        </footer>
+    </main>
+</body>
 
-
-</main>
-<footer class="footer">
-    Strona Główna <a href="#top">Wróć na górę strony</a>
-</footer>
-    </body>
 </html>
