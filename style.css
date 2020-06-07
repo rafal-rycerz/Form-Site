@@ -1,0 +1,13 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after{
+    box-sizing: inherit;
+  }
+
+  .navigation {
+    padding: 16px;
+    background: oldlace;
+    display: none;
+    }
